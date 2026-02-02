@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Game - Augusu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="crosshair">+</div>
+        <div id="instructions">
+            <div class="instruction-panel">
+                <h2>操作方法</h2>
+                <p>W, A, S, D - 移動</p>
+                <p>スペース - ジャンプ</p>
+                <p>マウス - 視点移動</p>
+                <p>左クリック - ブロック破壊</p>
+                <p>右クリック - ブロック配置</p>
+                <p>1-5 - ブロックタイプ選択</p>
+                <p class="start-text">クリックしてゲームを開始</p>
+            </div>
+        </div>
+        <div id="block-selector">
+            <div class="block-option active" data-type="grass">草</div>
+            <div class="block-option" data-type="dirt">土</div>
+            <div class="block-option" data-type="stone">石</div>
+            <div class="block-option" data-type="wood">木</div>
+            <div class="block-option" data-type="sand">砂</div>
+        </div>
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>

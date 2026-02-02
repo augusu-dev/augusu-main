@@ -1,0 +1,20 @@
+{
+  "name": "augusu-minecraft",
+  "version": "1.0.0",
+  "description": "A Minecraft-like voxel game built with Three.js",
+  "main": "game.js",
+  "scripts": {
+    "start": "npx http-server -p 8080"
+  },
+  "keywords": [
+    "minecraft",
+    "voxel",
+    "threejs",
+    "game"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.160.0"
+  }
+}
